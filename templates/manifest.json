@@ -1,0 +1,16 @@
+{
+  "files": [
+    { "path": "base/.gitignore" },
+    { "path": "base/.env.example.tpl" },
+    { "path": "base/tsconfig.json", "condition": "typescript" },
+    { "path": "base/README.md.tpl" },
+    { "path": "base/src/index.ts.tpl" },
+    { "path": "base/src/handlers/echo.ts.tpl", "features": ["starter"] },
+    { "path": "base/src/handlers/help.ts.tpl", "features": ["starter"] },
+    { "path": "base/src/handlers/ping.ts.tpl", "features": ["starter"] },
+    { "path": "docker/Dockerfile", "features": ["docker"] },
+    { "path": "docker/docker-compose.yml.tpl", "features": ["docker"] },
+    { "path": "docker/.dockerignore", "features": ["docker"] },
+    { "path": "mcp/src/mcp-server.ts.tpl", "features": ["mcp"] }
+  ]
+}

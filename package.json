@@ -1,0 +1,60 @@
+{
+  "name": "create-wa-stack",
+  "version": "0.1.0",
+  "description": "Single-command scaffolder for production-ready WhatsApp bots",
+  "type": "module",
+  "bin": {
+    "create-wa-stack": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "create-wa-stack",
+    "whatsapp",
+    "baileys",
+    "scaffolder",
+    "cli",
+    "whatsapp-bot",
+    "starter",
+    "boilerplate",
+    "create-app",
+    "npm-create"
+  ],
+  "author": "Kobus Wentzel <kobie@pop.co.za>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobie3717/create-wa-stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kobie3717/create-wa-stack/issues"
+  },
+  "homepage": "https://github.com/kobie3717/create-wa-stack#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "picocolors": "^1.0.0",
+    "cross-spawn": "^7.0.3",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}
